@@ -1,0 +1,71 @@
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: #262626;
+    color: white;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+a{
+    color: #00a9c7;
+}
+a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+h1,h2,h3,h5{
+    color: #ed1c24;
+}
+
+.navbar{
+    background-color: #212121;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+.navbar .nav-link{
+    color: #ffffff;
+}
+.nav-pills .nav-link.active{
+    color: #ed1c24;
+    background-color: #212121;
+}
+.navbar .nav-link:hover, .navbar-brand:hover{
+    color: #ed1c24;
+}
+
+section{
+    min-height: 100vh;
+    padding-top: 20vh;
+    text-align: center;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.425); */
+}
+section:nth-of-type(2n){
+    background-color: #434343;
+}
+.carousel{
+    background-color: #434343;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+.carousel img{
+    height: 100%;
+    width: auto;
+}
+
+.btn-primary{
+    background: #00a9c7;
+    border: #00a9c7;
+}
+.btn-primary:hover{
+    color: #000;
+    background: #fff;
+}
+
+#profile-picture{
+    padding: 2px;;
+    border: 1px solid rgba(255, 255, 255, 0.425);
+    border-radius: 50%;
+}
