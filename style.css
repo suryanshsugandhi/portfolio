@@ -79,7 +79,6 @@ section{
     scroll-snap-align: start;
     min-height: 100vh;
     padding-bottom: 10vh;
-    padding-top: 5vh;
     text-align: center;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.425); */
 }
