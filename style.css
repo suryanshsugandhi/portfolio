@@ -47,7 +47,6 @@ a.non-hover-link:hover{
 .navbar a{
     /* color: #ffffff; */
     color: #212121;
-    font-size: 1.2rem;d;
 }
 .nav-pills .nav-link.active{
     color: #ed1c24;
