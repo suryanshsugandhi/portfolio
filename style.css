@@ -46,13 +46,26 @@ section:nth-of-type(2n){
     background-color: #434343;
 }
 .carousel{
-    background-color: #434343;
+    /* background-color: #434343; */
+    background-color: #fff;
+    color: #000;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    padding: 0px;
+    max-height: 100%;
 }
 .carousel img{
-    height: 100%;
+    opacity: 0.8;
+    margin: 0px;
+    padding: 0px;
+}
+.carousel-img-container{
+    height: 50vh;
+    overflow: hidden;
     width: auto;
+}
+.carousel-caption *{
+    text-align: left;
 }
 
 .btn-primary{
