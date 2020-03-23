@@ -3,34 +3,43 @@ html{
 
 }
 body{
-    background-color: #262626;
-    color: white;
+    background-color: #f5f6f7;
+    color: #000;
     height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
     cursor: pointer;
+    /* padding-top: 50px; */
 }
+/* @media screen and (max-width: 768px) {
+    body { padding-top: 100px; }
+} */
 
 a{
     color: #00a9c7;
 }
 a:hover{
-    color: #fff;
+    color: #434343;
     text-decoration: underline;
 }
-h1,h2,h3,h5{
-    color: #ed1c24;
-}
-
 .navbar{
-    background-color: #212121;
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
-.navbar .nav-link{
-    color: #ffffff;
+
+.navbar .navbar-brand{
+    color: #00a9c7;
+}
+.navbar .navbar-brand:hover{
+    color: #00a9c7;
+}
+
+.navbar a{
+    /* color: #ffffff; */
+    color: #212121;
 }
 .nav-pills .nav-link.active{
     color: #ed1c24;
-    background-color: #212121;
+    background-color: #fff;
 }
 .navbar .nav-link:hover, .navbar-brand:hover{
     color: #ed1c24;
@@ -38,47 +47,58 @@ h1,h2,h3,h5{
 
 section{
     min-height: 100vh;
-    padding-top: 20vh;
     text-align: center;
+    padding-top: 10vh;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.425); */
 }
 section:nth-of-type(2n){
-    background-color: #434343;
-}
-.carousel{
     /* background-color: #434343; */
     background-color: #fff;
-    color: #000;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,.5);
-    padding: 0px;
-    max-height: 100%;
-}
-.carousel img{
-    opacity: 0.8;
-    margin: 0px;
-    padding: 0px;
-}
-.carousel-img-container{
-    height: 50vh;
-    overflow: hidden;
-    width: auto;
-}
-.carousel-caption *{
-    text-align: left;
 }
 
 .btn-primary{
-    background: #00a9c7;
-    border: #00a9c7;
+    background: #ed1c24;
+    border: 1px solid #ed1c24;
+    border-radius: 20px;
+
 }
 .btn-primary:hover{
-    color: #000;
-    background: #fff;
+    border: 1px solid #ed1c24;
+    background: none;
+}
+
+#landing{
+    /* sizing */
+    height: 100vh;
+    padding: 5vh 5vw;
+    margin-top: 0;
+    padding-top: 0;
+
+    /* background */
+    background: url('./img/SVG/red-bg.svg');
+    background-color: #fff;
+    background-color: #350880;
+    color: #fff;
+    background-size: cover;
+    background-position: 0 -10vh ;
+    background-repeat: no-repeat;
+
+    /* text position */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing h1{
+    font-size: 48px;
+}
+.name-title{
+    color: #ed1c24;
 }
 
 #profile-picture{
     padding: 2px;;
     border: 1px solid rgba(255, 255, 255, 0.425);
     border-radius: 50%;
+    background: #f5f6f7;
 }
