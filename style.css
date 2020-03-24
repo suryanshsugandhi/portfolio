@@ -9,7 +9,6 @@ body{
 
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 a{
@@ -76,9 +75,8 @@ body{
 }
 
 section{
-    overflow-y: scroll;
 
-    height: 100vh;
+    min-height: 100vh;
     padding-bottom: 2vh;
     padding-top: 2vh;
     text-align: center;
