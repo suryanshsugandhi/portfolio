@@ -31,8 +31,6 @@ a.non-hover-link:hover{
     float: initial;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-
-    max-height: 50px;
 }
 
 .navbar{
@@ -77,6 +75,7 @@ a.non-hover-link:hover{
 body{
     padding-bottom: 50px;
 }
+
 @media only screen and (max-width: 768px){
     body{
         padding-bottom: 70px;
@@ -93,17 +92,25 @@ section{
 }
 
 a.btn-primary{
-    background: #ed1c24;
-    border: 1px solid #ed1c24;
+    /* background: #ed1c24;
+    border: 1px solid #ed1c24; */
+    background: none;
+    border: none;
     border-radius: 20px;
 
     justify-content: center;
 }
 a.btn-primary:hover{
-    border: 1px solid #edc71c;
-    background: #edc71c;
+    /* border: 1px solid #edc71c;
+    background: #edc71c; */
+
+    background: none;
+    border: none;
 }
 
+a.btn-primary:focus, a.btn-primary:active{
+    outline: 0 none;
+}
 
 #landing{
 
@@ -128,8 +135,14 @@ a.btn-primary:hover{
 
     /* font */
     font-family: 'Roboto Condensed', sans-serif;
-
 }
+
+@media only screen and (max-width: 768px){
+    #landing h1{
+        font-size: 1.5rem;
+    }
+}
+
 .custom-card{
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
     background-color: rgba(255, 255, 255, 0.8);
@@ -152,6 +165,7 @@ a.btn-primary:hover{
 }
 @media only screen and (max-width: 768px){
     .carousel{
+        min-height: 50vh;
         border-top: 1px solid #000;
     }
 }
@@ -165,6 +179,12 @@ a.btn-primary:hover{
     height: 10vh;
     width: auto;
     padding: 1vh 1vw;
+}
+
+@media only screen and (max-width:768px){
+    .carousel img{
+        height: 6vh;
+    }
 }
 
 .carousel-control-prev-icon {
@@ -210,7 +230,7 @@ a.btn-primary:hover{
 }
 
 #projects .card{
-    background-color: rgba(54, 8, 128, 0.6);
+    background-color: rgba(54, 8, 128, 0.85);
 
     border: none;
     min-height: 60vh;
