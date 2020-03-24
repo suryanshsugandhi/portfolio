@@ -7,7 +7,7 @@ body{
     color: #000;
     height: 100vh;
 
-    overflow: scroll;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -28,7 +28,7 @@ a.non-hover-link:hover{
 
 #navbar{
     float: initial;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -47,6 +47,7 @@ a.non-hover-link:hover{
 .navbar a{
     /* color: #ffffff; */
     color: #212121;
+    font-size: 0.8rem;
 }
 .nav-pills .nav-link.active{
     color: #ed1c24;
@@ -71,13 +72,12 @@ body{
         padding-bottom: 70px;
     }
 }
-#custom-container {
-    scroll-snap-type: y mandatory;
-}
+
 section{
-    scroll-snap-align: start;
+
     min-height: 100vh;
     padding-bottom: 10vh;
+    padding-top: 2vh;
     text-align: center;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.425); */
 }
@@ -88,8 +88,6 @@ section{
     border-radius: 20px;
 
     justify-content: center;
-
-    font-size: 1.2rem;
 }
 .btn-primary:hover{
     border: 1px solid #edc71c;
@@ -118,23 +116,32 @@ section{
     align-items: center;
 
     /* font */
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
 
 }
+.custom-card{
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2vh 2vw;
+    border-radius: 15px;
 
-#landing h1{
-    font-size: 48px;
+    width: 100%;
+    height: auto;
 }
+
 .name-title{
     color: #edc71c;
 }
 
 #about{
-    background: url('./img/SVG/bg-3.svg');
+    background: url('./img/SVG/bg-4.svg');
     background-color: #fff;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:repeat-y;
+
+    font-size: 0.8rem;
 }
+
 
 #profile-picture{
     border: 2px solid rgb(119, 119, 119);
@@ -158,10 +165,11 @@ section{
 }
 
 #contact{
-    background: url('./img/SVG/bg-4.svg');
+    background: url('./img/SVG/bg-3.svg');
     background-color: #350880;
     background-size: cover;
     background-repeat: no-repeat;
 
     color: #fff;
 }
+
