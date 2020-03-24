@@ -107,7 +107,17 @@ a.btn-primary:hover{
     border: none;
 }
 
-a.btn-primary:focus, a.btn-primary:active{
+a.btn-primary:focus,
+a.btn-primary:active,
+a.btn-primary:active:focus{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+    background: none;
+    border: 0px;
     outline: 0 none;
 }
 
@@ -226,6 +236,10 @@ a.btn-primary:focus, a.btn-primary:active{
     align-items: center;
 
     color: #fff;
+}
+
+#projects .name-title{
+    color: #ff9634;
 }
 
 #projects .card{
