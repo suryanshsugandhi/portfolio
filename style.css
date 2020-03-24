@@ -103,7 +103,6 @@ a.btn-primary{
 a.btn-primary:hover{
     /* border: 1px solid #edc71c;
     background: #edc71c; */
-
     background: none;
     border: none;
 }
