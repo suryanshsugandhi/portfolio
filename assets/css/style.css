@@ -60,11 +60,6 @@ a.non-hover-link:hover{
 .navbar .nav-link:hover, .navbar-brand:hover{
     color: #ed1c24;
 }
-@media only screen and (max-width: 768px){
-    .navbar .nav-link:hover{
-        color: #212121;
-    }
-}
 
 .navbar .nav-pills{
     display: flex;
@@ -130,7 +125,7 @@ a.btn-primary:active:focus{
     padding-top: 0;
 
     /* background */
-    background: url('./img/SVG/green-bg-light.svg');
+    background: url('../../img/SVG/green-bg-light.svg');
     background-color: #fff;
     background-color: #350880;
     color: #fff;
@@ -205,7 +200,7 @@ a.btn-primary:active:focus{
 }
 
 #about{
-    background: url('./img/SVG/bg-4.svg');
+    background: url('../../img/SVG/bg-4.svg');
     background-color: #fff;
     background-size: cover;
     background-repeat:repeat-y;
@@ -225,8 +220,9 @@ a.btn-primary:active:focus{
 }
 
 #projects{
-    background: url('./img/SVG/bg-2.svg');
-    background-color: #350880;
+    background: url('../../img/SVG/bg-3.svg');
+    /* background-color: #350880; */
+    background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -235,17 +231,20 @@ a.btn-primary:active:focus{
     justify-content: center;
     align-items: center;
 
-    color: #fff;
+    color: #000;
 }
 
 #projects .name-title{
-    color: #ff9634;
+    /* color: #ff9634; */
+    font-weight: 700;
+    color: #000;
 }
 
 #projects .card{
-    background-color: rgba(54, 8, 128, 0.85);
+    background-color: rgba(255,255,255, 0.85);
+    color: #636363;
 
-    border: none;
+    /* border: 1px solid #000; */
     min-height: 60vh;
     width: auto;
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
@@ -264,6 +263,7 @@ a.btn-primary:active:focus{
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 0;
+
 }
 
 #projects .card-img{
@@ -272,6 +272,8 @@ a.btn-primary:active:focus{
     
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+
+    border-bottom: 2px solid #000;
 }
 
 #projects .card-img img{
@@ -281,14 +283,14 @@ a.btn-primary:active:focus{
 
 #projects .card a.btn-primary{
     padding: none;
-    background-color: #edc71c;
-    border: 1px solid #edc71c;
-    color: #000;
+    background-color: #00a9c7;
+    border: 1px solid #00a9c7;
+    color: #fff;
 }
 
 #projects .card a.btn-primary:hover{
-    border: 1px solid #ddb811;
-    background-color: #ddb811;
+    border: 1px solid #007c92;
+    background-color: #007c92;
 }
 
 #projects .card a.btn-secondary{
@@ -296,7 +298,7 @@ a.btn-primary:active:focus{
 }
 
 #blogs{
-    background: url('./img/SVG/bg-1.svg');
+    background: url('../../img/SVG/bg-1.svg');
     background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
@@ -345,7 +347,7 @@ a.btn-primary:active:focus{
 
 
 #contact{
-    background: url('./img/SVG/bg-3.svg');
+    background: url('../../img/SVG/bg-2.svg');
     background-color: #350880;
     background-size: cover;
     background-repeat: no-repeat;

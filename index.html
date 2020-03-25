@@ -13,13 +13,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Roboto 400, 700 -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700&display=swap" rel="stylesheet">
 
-    <!-- FONT AWESOME  -->
-    <script src="https://kit.fontawesome.com/66461d82a8.js" crossorigin="anonymous"></script>
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/external/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/external/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="assets/external/fontawesome/css/solid.min.css">
+
     <title>Suryansh Sugandhi</title>
 </head>
 
@@ -256,17 +259,17 @@
 
     <section id="projects">
         <div class="container">
+            <!-- <h4><strong>Projects</strong></h4> -->
             <div class="row">
-
                 <div class="col-10 mx-auto my-3 col-lg-4">
                     <div class="card" style="width: 100%;">
                         <div class="card-img">
                             <img src="img/proj/invento.png" class="card-img-top" alt="...">
                         </div>
                         <div class="ml-2 mb-2 text-left card-info">
-                            <span class="badge badge-success m-0">NodeJs</span>
-                            <span class="badge badge-secondary m-0">MongoDB</span>
-                            <span class="badge badge-primary m-0">Login</span>
+                            <span class="badge badge-dark m-0">NodeJs</span>
+                            <span class="badge badge-dark m-0">MongoDB</span>
+                            <span class="badge badge-dark m-0">Login</span>
                     </div>
                         <div class="card-body">
                             <h5 class="card-title text-left name-title">Quiz App</h5>
@@ -276,12 +279,17 @@
                                 It was played by more than 300 participants
                             </p>
                             
-                            <a href="https://quiz-invento.herokuapp.com/" target="_blank" class="btn mr-1 btn-secondary">
-                                  <i class="fas fa-external-link-square-alt"></i>
-                            </a>
-                            <a href="https://github.com/suryanshsugandhi/quiz-app" target="_blank" class="btn ml-1 btn-secondary">
-                                  <i class="fab fa-github"></i>
-                            </a>
+                            <div class="text-left">
+                                <a href="https://quiz-invento.herokuapp.com/" target="_blank" class="btn mr-1 btn-primary">
+                                    <!-- <i class="fas fa-external-link-square-alt"></i> -->
+                                    Try
+                              </a>
+                              <a href="https://github.com/suryanshsugandhi/quiz-app" target="_blank" class="btn ml-1 btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    Github
+                              </a>
+                            </div>
+                            
                             
                         </div>
                       </div>
@@ -293,8 +301,8 @@
                             <img src="img/proj/color.png" class="card-img-top" alt="...">
                         </div>
                         <div class="ml-2 mb-2 text-left card-info">
-                            <span class="badge badge-success m-0">jQuery</span>
-                            <span class="badge badge-warning m-0">HTML</span>
+                            <span class="badge badge-dark m-0">jQuery</span>
+                            <span class="badge badge-dark m-0">HTML</span>
                     </div>
                         <div class="card-body">
                             <h5 class="card-title text-left name-title">Color Guessing Game</h5>
@@ -303,13 +311,16 @@
                                 For designers!
                                 Can you guess the colour from the RGB values?
                             </p>
-                            
-                            <a href="https://suryanshsugandhi.github.io/color-game/" target="_blank" class="btn mr-1 btn-secondary">
-                                  <i class="fas fa-external-link-square-alt"></i>
-                            </a>
-                            <a href="https://github.com/suryanshsugandhi/color-game" target="_blank" class="btn ml-1 btn-secondary">
-                                  <i class="fab fa-github"></i>
-                            </a>
+                            <div class="text-left">
+                                <a href="https://suryanshsugandhi.github.io/color-game/" target="_blank" class="btn mr-1 btn-primary">
+                                    <!-- <i class="fas fa-external-link-square-alt"></i> -->
+                                    Try
+                                </a>
+                                <a href="https://github.com/suryanshsugandhi/color-game" target="_blank" class="btn ml-1 btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    Github
+                                </a>
+                            </div>
                             
                         </div>
                       </div>
@@ -321,9 +332,9 @@
                             <img src="img/proj/garbage.png" class="card-img-top" alt="...">
                         </div>
                         <div class="ml-2 mb-2 text-left card-info">
-                            <span class="badge badge-primary m-0">IoT</span>
-                            <span class="badge badge-info m-0">Arduino</span>
-                            <span class="badge badge-danger m-0">C++</span>
+                            <span class="badge badge-dark m-0">IoT</span>
+                            <span class="badge badge-dark m-0">Arduino</span>
+                            <span class="badge badge-dark m-0">C++</span>
                     </div>
                         <div class="card-body">
                             <h5 class="card-title text-left name-title">Smart Garbage Collector</h5>
@@ -332,19 +343,19 @@
                                 Smart Garbage Collector based on Arduino Mega 2560. Programmed to send SMS via GSM when dustbin is full.
                             </p>
                             
-                            <a class="btn mr-1 btn-secondary">
-                                  <i class="fas fa-external-link-square-alt"></i>
-                            </a>
-                            <a href="https://github.com/suryanshsugandhi/garbagecollector/" target="_blank" class="btn ml-1 btn-secondary">
-                                  <i class="fab fa-github"></i>
-                            </a>
+                            <div class="text-left">
+                                <a href="https://github.com/suryanshsugandhi/garbagecollector/" target="_blank" class="btn ml-1 btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    Github
+                                </a>
+                            </div>
+                            
                             
                         </div>
                       </div>
                 </div> 
                 <!--card 3 -->
 
-                
 
             </div> <!--end of row-->
            
