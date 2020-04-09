@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="assets/external/fontawesome/css/brands.min.css">
     <link rel="stylesheet" href="assets/external/fontawesome/css/solid.min.css">
 
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Suryansh Sugandhi</title>
 </head>
 
@@ -61,10 +64,10 @@
             </h1>
             <div id="next-btn" class="text-center">
                 <div class="mt-5 mb-1">
-                    <a href="#about" class="p-4 pb-0 non-hover-link">more about me</a>
+                    <!-- <a href="#about" class="p-4 pb-0 non-hover-link">more</a> -->
                 </div>
-                <div class="flex-column ">
-                    <a href="#about" class="py-0 my-0 btn btn-primary flex-column d-flex">
+                <div class="flex-column animated bounce infinite slow delay-0s">
+                    <a href="#about" class="py-3 my-0 btn btn-primary flex-column d-flex">
                         <i class="fas fa-chevron-down"></i>
                         <i class="fas fa-chevron-down"></i>
                     </a>
@@ -80,7 +83,7 @@
 
             <div class="row">
 
-                <div class=" my-2 col-12 col-lg-5">
+                <div id="intro" class=" my-2 col-12 col-lg-5">
                     <div class="">
                         <div class="px-4">
                             <img src="img/profile.png"" alt="" id="profile-picture" class="m-2 px-2" height="75vh">
@@ -93,24 +96,26 @@
                         </div>
     
     
-                        <div class="container mt-2 text-justify">
+                        <div class="container mt-2 mb-0 pb-0 text-justify">
                             <p>
-                                I am a full-stack web developer and designer. Engineering undergrad from IET DAVV,
-                                Indore
+                                I am a full-stack web developer and designer. 
+                                Engineering undergrad from <strong><a href="https://www.ietdavv.edu.in">IET DAVV, Indore</a></strong>
                             </p>
                             <p class="mt-2">
                                 I work on the MEAN stack
-                                to design and develop robust, modular and minimalistic web applications
-                                Checkout my <a
-                                    href="#projects"><strong>portfolio projects.</strong></a>
+                                to design and develop robust, modular and minimalistic web applications.
+                                <br>
+                                I have worked on various projects in various domains.
+                                I have professional experience of two live projects during my internships.
                                 <br>
                                 <br>
-                                I am passionate for technology and I love to write about it. <a
-                                    href="#blogs"><strong>Blogs</strong></a>
+                                I am passionate for technology and I love to write about it. I also sketch and draw.
+                                My love for science led me to this journey in development
+                                while the artistic kid in me was curious to explore designing.
                             </p>
                         </div>
                         <br>
-
+                        <p class="mt-0 pt-0 text-center"><strong>Contact Me:</strong></p>
                         <!-- Contact links -->
                         <a href="https://www.github.com/suryanshsugandhi" target="_blank"><i
                                 class="fab fa-github fa-2x"></i></a>
@@ -259,7 +264,7 @@
 
     <section id="projects">
         <div class="container">
-            <!-- <h4><strong>Projects</strong></h4> -->
+            <h4><strong>Portfolio Projects</strong></h4>
             <div class="row">
                 <div class="col-10 mx-auto my-3 col-lg-4">
                     <div class="card" style="width: 100%;">
@@ -364,7 +369,7 @@
 
     <section id="blogs">
         <div class="container">
-            Planning on writing xD
+            <h1>Blogs will be updated soon</h1>
             <div class="row">
 
                 <div class="col-10 mx-auto my-3 col-lg-4">
@@ -433,6 +438,7 @@
     </section>
 
 
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -444,7 +450,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!-- <script src="app.js"></script> -->
+    
+    <!-- app.js -->
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
