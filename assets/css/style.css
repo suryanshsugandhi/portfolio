@@ -344,7 +344,7 @@ a.btn-primary:active:focus{
 }
 
 #about{
-    background: url('../../img/SVG/bg-4.svg');
+    /* background: url('../../img/SVG/bg-3.svg'); */
     background-color: #fff;
     background-size: cover;
     background-repeat:repeat-y;
@@ -363,9 +363,9 @@ a.btn-primary:active:focus{
 }
 
 #projects{
-    background: url('../../img/SVG/bg-3.svg');
-    /* background-color: #350880; */
-    background-color: #fff;
+    /* background: url('../../img/SVG/bg-4.svg'); */
+    background-color: #eeefed;
+    /* background-color: #fff; */
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -384,7 +384,7 @@ a.btn-primary:active:focus{
 }
 
 #projects .card{
-    background-color: rgba(255,255,255, 0.9);
+    background-color: rgba(255,255,255, 1);
     color: #636363;
 
     /* border: 1px solid #000; */
@@ -444,7 +444,7 @@ a.btn-primary:active:focus{
 }
 
 #blogs{
-    background: url('../../img/SVG/bg-1.svg');
+    /* background: url('../../img/SVG/bg-1.svg'); */
     background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
