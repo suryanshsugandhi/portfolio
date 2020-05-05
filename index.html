@@ -15,8 +15,11 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Roboto 400, 700 -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Manrope Sans-Serif 400, 700 -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- Robot condensed Sans-serif 700-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
 
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="assets/external/fontawesome/css/fontawesome.min.css">
@@ -29,30 +32,7 @@
     <title>Suryansh Sugandhi</title>
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offest="0">
-
-    <nav id="navbar" class="navbar navbar-light fixed-bottom">
-        <div class="container">
-            <!-- <a class="navbar-brand" href="#">Suryansh Sugandhi</a> -->
-            <ul class="nav nav-pills mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#landing"><i class="fas fa-home"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#blogs">Blogs</a>
-                </li>
-                <li class="nav-item d-none">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<body>
 
     <section id="landing">
         <div class="container">
@@ -66,7 +46,7 @@
                 <div class="mt-5 mb-1">
                     <!-- <a href="#about" class="p-4 pb-0 non-hover-link">more</a> -->
                 </div>
-                <div class="flex-column animated bounce infinite slow delay-0s">
+                <div class="flex-column animated bounce infinite slower delay-2s">
                     <a href="#about" class="py-3 my-0 btn btn-primary flex-column d-flex">
                         <i class="fas fa-chevron-down"></i>
                         <i class="fas fa-chevron-down"></i>
@@ -79,24 +59,24 @@
 
     <section id="about">
 
-        <div class="container custom-card">
+        <div class="container">
 
-            <div class="row">
+            <div class="row reveal-row">
 
-                <div id="intro" class=" my-2 col-12 col-lg-5">
+                <div id="intro" class=" my-2 col-12 col-lg-6">
                     <div class="">
-                        <div class="px-4">
-                            <img src="img/profile.png"" alt="" id="profile-picture" class="m-2 px-2" height="75vh">
-                            <div class="h3 m-2 px-2">
-                                <strong> Suryansh Sugandhi</strong>
+                        <div class="px-4 mb-4">
+                            <img src="img/profile.png"" alt="" class="m-2 px-2 profile-picture" height="100vh">
+                            <div class="h3 m-2 px-2" id="suryansh-name">
+                                <strong> <a href="https://github.com/suryanshsugandhi" target="_blank">Suryansh Sugandhi</a></strong>
                             </div>
-                                <h6>
-                                    <strong>Developer | Designer | Geek</strong>
-                                </h6>
+                                <p class="h6">
+                                    <strong>Developer | Designer </strong>
+                                </p>
                         </div>
     
     
-                        <div class="container mt-2 mb-0 pb-0 text-justify">
+                        <div class="container mt-2 mb-0 pb-0 text-left">
                             <p>
                                 I am a full-stack web developer and designer. 
                                 Engineering undergrad from <strong><a href="https://www.ietdavv.edu.in">IET DAVV, Indore</a></strong>
@@ -105,41 +85,34 @@
                                 I work on the MEAN stack
                                 to design and develop robust, modular and minimalistic web applications.
                                 <br>
+                                <br>
                                 I have worked on various projects in various domains.
                                 I have professional experience of two live projects during my internships.
                                 <br>
                                 <br>
                                 I am passionate for technology and I love to write about it. I also sketch and draw.
-                                My love for science led me to this journey in development
+                                My love for science led me to this journey in computer science
                                 while the artistic kid in me was curious to explore designing.
                             </p>
                         </div>
                         <br>
-                        <p class="mt-0 pt-0 text-center"><strong>Contact Me:</strong></p>
-                        <!-- Contact links -->
-                        <a href="https://www.linkedin.com/in/suryanshsugandhi" target="_blank"><i
-                            class="fab fa-linkedin fa-2x mx-1"></i></a>
-                        <a href="https://www.github.com/suryanshsugandhi" target="_blank"><i
-                                class="fab fa-github fa-2x mx-1"></i></a>
-                        <a href="mailto:suryansh71199@gmail.com" target="_blank"><i
-                                class="fas fa-at fa-2x mx-1"></i></a>
-                        <a href="https://t.me/suryanshsugandhi" target="_blank"><i 
-                                class="fab fa-telegram fa-2x mx-1 "></i></a>
+                        <!-- <p class="mt-0 pt-0 text-center"><strong>Contact Me:</strong></p> -->
+                        
                     </div>
                 </div> <!-- end of column -->
 
-                <div class="col-12 col-lg-7 my-2">
-                    <div class="">
+                <div class="col-12 col-lg-6 my-2 custom-carousel">
+                    <div class="carousel-flex">
                         <!-- <h4><strong>Technology Stack</strong></h4> -->
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner mt-4">
                               <div class="carousel-item active">
-                                <p class="h4"><strong>Front-end</strong></p>
+                                <p class="h6"><strong>Front end</strong></p>
                                 <div class="row justify-content-center container">
                                     <div class="col-4">
                                         <img src="img/icons/angular.svg" alt="">
                                         <br>
-                                        <p>Angular</p>
+                                        <p>Angular 9</p>
                                     </div>
                                     <div class="col-4">
                                         <img src="img/icons/w3_html5-icon.svg" alt="">
@@ -170,7 +143,7 @@
                               </div>
 
                               <div class="carousel-item">
-                                <p class="h4"><strong>Back-end</strong></p>
+                                <p class="h6"><strong>Back end</strong></p>
                                 <div class="row justify-content-center container">
                                     <div class="col-4">
                                         <img src="img/icons/Node.js_logo.svg" alt="">
@@ -196,7 +169,7 @@
                               </div>
 
                               <div class="carousel-item">
-                                <p class="h4"><strong>Designing</strong></p>
+                                <p class="h6"><strong>Designing</strong></p>
                                 <div class="row justify-content-center container">
                                     <div class="col-4">
                                         <img src="img/icons/ai.svg" alt="">
@@ -215,7 +188,7 @@
                               
 
                               <div class="carousel-item">
-                                <p class="h4"><strong>Languages and tools</strong></p>
+                                <p class="h6"><strong>Languages and tools</strong></p>
                                 <div class="row justify-content-center container">
                                     <div class="col-4">
                                         <img src="img/icons/Python-logo-notext.svg" alt="">
@@ -263,178 +236,177 @@
         </div> <!-- end of container -->
     </section>
 
-    <section id="projects" class="bg-light">
+    <section id="projects">
         <div class="container">
-            
-            <div class="row">
-                <div class="col-10 mx-auto my-3 col-lg-4">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-img">
-                            <img src="img/proj/invento.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="ml-2 mb-2 text-left card-info">
-                            <span class="badge badge-dark m-0">NodeJs</span>
-                            <span class="badge badge-dark m-0">MongoDB</span>
-                            <span class="badge badge-dark m-0">Login</span>
+            <h4 class="mx-auto"><strong>Project Showcase</strong></h4>
+
+            <!-- INVENTO -->
+            <div class="row reveal-row my-5">
+                <div class="col-10 order-md-12 order-1 mx-auto my-3 col-lg-6">
+                    <img src="img/projects/invento-mockup.png" alt="">
+                </div>
+                <div class="col-10 order-md-12 order-12 mx-auto my-3 col-lg-5">
+                    <div class="ml-2 mb-2 text-left card-info">
+                        <span class="badge badge-secondary m-0">NodeJs</span>
+                        <span class="badge badge-secondary m-0">MongoDB</span>
+                        <span class="badge badge-secondary m-0">Google OAuth</span>
                     </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-left name-title">Quiz App</h5>
-                            
-                            <p class="card-text text-justify mb-0">Random trivia questions from a pool of 200+ questions on Invento 2019.
-                                This project was developed on the MEAN stack for IET DAVV's techfest.
-                                It was played by more than 300 participants
-                            </p>
-                            
-                            <div class="text-left">
-                                <a href="https://quiz-invento.herokuapp.com/" target="_blank" class="btn mr-1 btn-primary">
-                                    <!-- <i class="fas fa-external-link-square-alt"></i> -->
-                                    Try
-                              </a>
-                              <a href="https://github.com/suryanshsugandhi/quiz-app" target="_blank" class="btn ml-1 btn-secondary">
-                                    <i class="fab fa-github"></i>
-                                    Github
-                              </a>
-                            </div>
-                            
-                            
-                        </div>
-                      </div>
-                </div> <!--card 1-->
+                    <h4 class="text-left"><strong>
+                        <a href="https://quiz-invento.herokuapp.com" target="_blank">
+                            Invento Quiz Contest
+                            <span style="font-size: 0.8rem;"><i class="fas fa-link fa-fw"></i></span>
+                        </a>
+                    </strong></h4>
+                    <p class="text-left">
+                        Random trivia questions from a pool of 200+ questions on Invento 2019.
+                    This project was developed on the MEAN stack for IET DAVV's techfest.
+                    It was played by more than 300 participants signed in through google accounts.
+                    </p>
 
-                <div class="col-10 mx-auto my-3 col-lg-4">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-img">
-                            <img src="img/proj/color.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="ml-2 mb-2 text-left card-info">
-                            <span class="badge badge-dark m-0">jQuery</span>
-                            <span class="badge badge-dark m-0">HTML</span>
+                    <div class="text-left">
+                      <a href="https://github.com/suryanshsugandhi/quiz-app" target="_blank" class="btn ml-1 btn-secondary">
+                            <i class="fab fa-github"></i>
+                            Github
+                      </a>
                     </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-left name-title">Color Guessing Game</h5>
-                            
-                            <p class="card-text text-justify mb-0">
-                                For designers!
-                                Can you guess the colour from the RGB values?
-                            </p>
-                            <div class="text-left">
-                                <a href="https://suryanshsugandhi.github.io/color-game/" target="_blank" class="btn mr-1 btn-primary">
-                                    <!-- <i class="fas fa-external-link-square-alt"></i> -->
-                                    Try
-                                </a>
-                                <a href="https://github.com/suryanshsugandhi/color-game" target="_blank" class="btn ml-1 btn-secondary">
-                                    <i class="fab fa-github"></i>
-                                    Github
-                                </a>
-                            </div>
-                            
-                        </div>
-                      </div>
-                </div> <!--card 2 -->
+                </div>
+            </div>
 
-                <div class="col-10 mx-auto my-3 col-lg-4">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-img">
-                            <img src="img/proj/garbage.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="ml-2 mb-2 text-left card-info">
-                            <span class="badge badge-dark m-0">IoT</span>
-                            <span class="badge badge-dark m-0">Arduino</span>
-                            <span class="badge badge-dark m-0">C++</span>
+            <!-- Colour Game -->
+            <div class="row reveal-row my-5">
+                <div class="col-10 order-md-12 order-1 mx-auto my-3 col-lg-6">
+                    <img src="img/projects/color-game-mockup.png" alt="">
+                </div>
+                <div class="col-10 order-md-1 order-12 mx-auto my-3 col-lg-5">
+                    <div class="ml-2 mb-2 text-left card-info">
+                        <span class="badge badge-secondary m-0">jQuery</span>
+                        <span class="badge badge-secondary m-0">HTML</span>
                     </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-left name-title">Smart Garbage Collector</h5>
-                            
-                            <p class="card-text text-justify mb-0">
-                                Smart Garbage Collector based on Arduino Mega 2560. Programmed to send SMS via GSM when dustbin is full.
-                            </p>
-                            
-                            <div class="text-left">
-                                <a href="https://github.com/suryanshsugandhi/garbagecollector/" target="_blank" class="btn ml-1 btn-secondary">
-                                    <i class="fab fa-github"></i>
-                                    Github
-                                </a>
-                            </div>
-                            
-                            
-                        </div>
-                      </div>
-                </div> 
-                <!--card 3 -->
+                    <h4 class="text-left"><strong>
+                        <a href="https://suryanshsugandhi.github.io/color-game/" target="_blank">
+                            Colour Guessing Game
+                            <span style="font-size: 0.8rem;"><i class="fas fa-link fa-fw"></i></span>
+                        </a>
+                    </strong></h4>
+                    <p class="text-left">
+                        For the designers and web developers out there. Guess the color from the RGB value.
+                        Start out with an easy mode. When you're seasoned play the hard mode to get more complex values.
+                        Enjoy!
+                    </p>
 
-
-            </div> <!--end of row-->
+                    <div class="text-left">
+                      <a href="https://github.com/suryanshsugandhi/color-game" target="_blank" class="btn ml-1 btn-secondary">
+                            <i class="fab fa-github"></i>
+                            Github
+                      </a>
+                    </div>
+                </div>
+            </div>
            
+
+            <!-- Smart Garbage Collector -->
+            <div class="row reveal-row my-5">
+                <div class="col-10 order-md-12 order-1 mx-auto my-3 col-lg-6">
+                    <img src="img/projects/arduino.png" alt="">
+                </div>
+                <div class="col-10 order-md-12 order-12 mx-auto my-3 col-lg-5">
+                    <div class="ml-2 mb-2 text-left card-info">
+                        <span class="badge badge-secondary m-0">IoT</span>
+                        <span class="badge badge-secondary m-0">Arduino</span>
+                        <span class="badge badge-secondary m-0">Collaborative Project</span>
+                    </div>
+                    <h4 class="text-left"><strong>
+                        <a href="https://youtu.be/si8Ju9XdiWM" target="_blank">
+                            Smart Garbage Collector
+                            <span style="font-size: 0.8rem;"><i class="fas fa-link fa-fw"></i></span>
+                        </a>
+                    </strong></h4>
+                    <p class="text-left">
+                        Smart Garbage Collection system based on Arduino Mega 2560. 
+                        <br>
+                        Developed as a prototype utility for the 
+                        Swacch Bharat Mission
+                        The system sends an alert to the nearest garbage collection van when the dustbin is full and allows
+                        centralized status check for all dustbins.    
+                    </p>
+
+                    <div class="text-left">
+                      <a href="https://github.com/suryanshsugandhi/garbagecollector" target="_blank" class="btn ml-1 btn-secondary">
+                            <i class="fab fa-github"></i>
+                            Github
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+
         </div> <!-- end of container-->
     </section>
 
-    <section id="blogs">
+    <section id="blogs"> 
         <div class="container">
-            <h4>Blogs will be updated soon</h4>
-            <div class="row">
+            <h4><strong>Recent Blogs</strong></h4>
+            <div class="row reveal-row my-5 text-left">
 
-                <div class="col-10 mx-auto my-3 col-lg-4">
-                    <div class="card" style="width: 100%;">
-                        <div class="ml-2 mb-2 p-2 text-left card-info">
-                            <span class="badge badge-dark m-0">NodeJs</span>
-                            <span class="badge badge-dark m-0">MongoDB</span>
-                    </div>
-                        <div class="card-body">
-                            <a ><h5 class="card-title text-left">Blog 1</h5></a>
-                            
-                            <p class="card-text text-justify mb-0">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A consectetur dolorum cupiditate quidem impedit quo harum nemo perferendis nihil porro ipsum quae vel laboriosam, ut mollitia fuga dolore animi aliquid! Sequi aperiam cum quo numquam, beatae, obcaecati doloribus provident est, veritatis excepturi dicta velit! Laudantium, vero quis assumenda, nulla atque animi enim eius neque, voluptatibus excepturi eveniet cumque? Repellat vitae ad, doloribus quibusdam necessitatibus nemo dolor expedita sunt quae ab amet at rerum provident quasi, fugit aperiam eos minus consequatur non temporibus molestias sed incidunt? Numquam at velit doloremque, enim facere consectetur qui recusandae, quod reprehenderit quas nisi architecto illo iste, ipsum tempora dolorem autem earum suscipit quisquam quibusdam adipisci porro quaerat? Aut tempora id qui beatae at molestias ducimus ab doloribus dolorem, aperiam ipsa nesciunt odit iure quod corporis modi odio. Atque natus voluptates numquam officiis impedit saepe fugiat tenetur a laboriosam, eum quaerat reiciendis veritatis ratione, nulla odit quia voluptatibus quae illo dolorem itaque aperiam! Adipisci asperiores velit neque unde architecto ipsa aut error obcaecati id alias. Corporis quos eaque consectetur fugiat. Repellat culpa porro architecto aut deserunt aperiam deleniti quidem beatae omnis assumenda? Inventore saepe maxime, nostrum earum reprehenderit vel ipsam aut labore repudiandae, incidunt praesentium quae.
-                            </p>
-                            
-                            
-                        </div>
-                      </div>
-                </div> <!--card 1-->
+                <div class="col-12 col-md-5 mx-auto my-3">
+                    <img src="img/blogs/mike.jpg" alt="" width="100%">
+                    <h4><strong>There's nothing here, scroll past</strong> </h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatem voluptatibus atque unde blanditiis tempora praesentium, autem ipsum. Architecto ut eos placeat ex illo iure vel ipsum illum repellendus corporis?
+                    </p>
+                </div>
 
-                <div class="col-10 mx-auto my-3 col-lg-4">
-                    <div class="card" style="width: 100%;">
-                        <div class="ml-2 mb-2 p-2 text-left card-info">
-                            <span class="badge badge-dark m-0">HTML</span>
-                    </div>
-                        <div class="card-body">
-                            <a ><h5 class="card-title text-left">Blog 2</h5></a>
-                            
-                            <p class="card-text text-justify mb-0">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A consectetur dolorum cupiditate quidem impedit quo harum nemo perferendis nihil porro ipsum quae vel laboriosam, ut mollitia fuga dolore animi aliquid! Sequi aperiam cum quo numquam, beatae, obcaecati doloribus provident est, veritatis excepturi dicta velit! Laudantium, vero quis assumenda, nulla atque animi enim eius neque, voluptatibus excepturi eveniet cumque? Repellat vitae ad, doloribus quibusdam necessitatibus nemo dolor expedita sunt quae ab amet at rerum provident quasi, fugit aperiam eos minus consequatur non temporibus molestias sed incidunt? Numquam at velit doloremque, enim facere consectetur qui recusandae, quod reprehenderit quas nisi architecto illo iste, ipsum tempora dolorem autem earum suscipit quisquam quibusdam adipisci porro quaerat? Aut tempora id qui beatae at molestias ducimus ab doloribus dolorem, aperiam ipsa nesciunt odit iure quod corporis modi odio. Atque natus voluptates numquam officiis impedit saepe fugiat tenetur a laboriosam, eum quaerat reiciendis veritatis ratione, nulla odit quia voluptatibus quae illo dolorem itaque aperiam! Adipisci asperiores velit neque unde architecto ipsa aut error obcaecati id alias. Corporis quos eaque consectetur fugiat. Repellat culpa porro architecto aut deserunt aperiam deleniti quidem beatae omnis assumenda? Inventore saepe maxime, nostrum earum reprehenderit vel ipsam aut labore repudiandae, incidunt praesentium quae.
-                            </p>
-                            
-                            
-                        </div>
-                      </div>
-                </div> <!--card 2-->
+                <div class="col-12 col-md-5 mx-auto my-3">
+                    <img src="img/blogs/patatap.jfif" alt="" width="100%">
+                    <h4><strong>Attractive heading to justify the absence of blogs</strong></h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatem voluptatibus atque unde blanditiis tempora praesentium, autem ipsum. Architecto ut eos placeat ex illo iure vel ipsum illum repellendus corporis?
+                    </p>
+                </div>
 
-                <div class="col-10 mx-auto my-3 col-lg-4">
-                    <div class="card" style="width: 100%;">
-                        <div class="ml-2 mb-2 p-2 text-left card-info">
-                            <span class="badge badge-dark m-0">Angular</span>
-                            <span class="badge badge-dark m-0">MongoDB</span>
-                    </div>
-                        <div class="card-body">
-                            <a ><h5 class="card-title text-left">Blog 3</h5></a>
-                            
-                            <p class="card-text text-justify mb-0">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A consectetur dolorum cupiditate quidem impedit quo harum nemo perferendis nihil porro ipsum quae vel laboriosam, ut mollitia fuga dolore animi aliquid! Sequi aperiam cum quo numquam, beatae, obcaecati doloribus provident est, veritatis excepturi dicta velit! Laudantium, vero quis assumenda, nulla atque animi enim eius neque, voluptatibus excepturi eveniet cumque? Repellat vitae ad, doloribus quibusdam necessitatibus nemo dolor expedita sunt quae ab amet at rerum provident quasi, fugit aperiam eos minus consequatur non temporibus molestias sed incidunt? Numquam at velit doloremque, enim facere consectetur qui recusandae, quod reprehenderit quas nisi architecto illo iste, ipsum tempora dolorem autem earum suscipit quisquam quibusdam adipisci porro quaerat? Aut tempora id qui beatae at molestias ducimus ab doloribus dolorem, aperiam ipsa nesciunt odit iure quod corporis modi odio. Atque natus voluptates numquam officiis impedit saepe fugiat tenetur a laboriosam, eum quaerat reiciendis veritatis ratione, nulla odit quia voluptatibus quae illo dolorem itaque aperiam! Adipisci asperiores velit neque unde architecto ipsa aut error obcaecati id alias. Corporis quos eaque consectetur fugiat. Repellat culpa porro architecto aut deserunt aperiam deleniti quidem beatae omnis assumenda? Inventore saepe maxime, nostrum earum reprehenderit vel ipsam aut labore repudiandae, incidunt praesentium quae.
-                            </p>
-                            
-                            
-                        </div>
-                      </div>
-                </div> <!--card 3-->
-                
-                <!-- row end -->
+                <div class="col-12 col-md-5 mx-auto my-3">
+                    <img src="img/blogs/circles-r2.png" alt="" width="100%">
+                    <h4><strong>It was my new year's resolution to write blogs</strong></h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatem voluptatibus atque unde blanditiis tempora praesentium, autem ipsum. Architecto ut eos placeat ex illo iure vel ipsum illum repellendus corporis?
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-5 mx-auto my-3">
+                    <img src="img/blogs/submarine.png" alt="" width="100%">
+                    <h4><strong>Why are you still here?</strong></h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatem voluptatibus atque unde blanditiis tempora praesentium, autem ipsum. Architecto ut eos placeat ex illo iure vel ipsum illum repellendus corporis?
+                    </p>
+                </div>
+
             </div>
-
         </div>
     </section>
 
     <section id="contact">
-        <div class="container">
+        <div class="container mt-4 text-left">
+            <h4>Let's work together</h4>
+            <div class="row">
+                <div class="col-12 col-md-7 text-left text-secondary">
+                    Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+                    <br>
+                </div>
+            </div>
+            <div class="my-4">
+                <a href="mailto:suryansh71199@gmail.com" target="_blank"> suryansh71199@gmail.com </a>
+            </div>
 
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/profile.png" alt="" height="50vh" class="profile-picture">
+                </div>
+                <div class="col-8 text-right d-flex justify-content-end align-items-end">
+                    <a href="http://github.com/suryanshsugandhi" class="mx-2 text-secondary" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a href="http://linkedin.com/in/suryanshsugandhi" class="mx-2 text-secondary" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                    <a href="http://t.me/suryanshsugandhi" class="mx-2 text-secondary" target="_blank" rel="noopener noreferrer">Telegram</a>
+                </div>
+            </div>
         </div>
     </section>
 
