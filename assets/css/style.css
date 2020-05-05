@@ -135,49 +135,43 @@
 /* Global styles*/
 html{
     scroll-behavior: smooth;
-
 }
 body{
-    /* background-color: #350880; */
-    color: #000;
-    /* height: 100vh; */
-
+    /* font */
     font-family: 'Manrope', sans-serif;
+    color: #000;
+
+    /* sizing */
     overflow-x: hidden;
-
-    padding-bottom: 50px;
-}
-
-@media only screen and (max-width: 768px){
-    body{
-        padding-bottom: 70px;
-    }
 }
 
 section{
+    /* text */
+    text-align: center;
 
-    /* min-height: 100vh; */
+    /* box sizing */
     padding-bottom: 2vh;
     padding-top: 2vh;
-    text-align: center;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.425); */
 }
 
+/* links and buttons */
 a{
-    color: #3200bd;
+    color: #000;
+    text-decoration: underline;
 }
 a:hover{
     color: #434343;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-
-a.btn-primary:focus,
-a.btn-primary:active,
-a.btn-primary:active:focus{
-    outline: none;
-    border: none;
-    background: none;
+h4 a{
+    color: #000;
+    text-decoration: none;
+}
+h4 a:hover{
+    color: #000;
+    text-decoration: underline;
+    text-decoration-style: dashed;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active{
@@ -192,9 +186,11 @@ a.btn{
     font-size: 0.8rem;
     border-color: #000;
     color: #fff;
+    text-decoration: none;
 }
 a.btn:hover{
     color: #fff;
+    background-color: #000;
     text-decoration: underline;
     text-decoration-style: dotted;
 }
@@ -242,22 +238,9 @@ a.non-hover-link:hover{
     }
 }
 
-
-.custom-card{
-    box-shadow: 0 2px 4px rgba(0,0,0,.5);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2vh 2vw;
-    border-radius: 15px;
-
-    width: 100%;
-    height: auto;
-}
-
 .name-title{
     color: #edc71c;
 }
-
-
 
 #landing a.btn-primary{
     background: none;
@@ -291,27 +274,31 @@ a.non-hover-link:hover{
 
 #suryansh-name a{
     color: #000;
+    text-decoration: none;
 }
 
 #suryansh-name a:hover{
+    text-decoration: underline;
     text-decoration-style: dashed;
 }
 
 .carousel{
-    min-height: 55vh;
-    
-    font-size: 0.8rem;
+    /* box sizing */
     justify-content: space-around;
     align-items: flex-start;
+    min-height: 55vh;
 
+    /* font */
+    font-size: 0.8rem;
 }
 .custom-carousel{
+    /* box sizing */
     width: 100%;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 @media only screen and (max-width: 768px){
     .carousel{
         min-height: 50vh;
@@ -371,67 +358,14 @@ a.non-hover-link:hover{
     animation-duration: 2s;
 }
 
-#projects h4 a{
-    color: #000;
-}
-#projects a:hover{
-    text-decoration: underline;
-    text-decoration-style: dotted;
-}
-
 /* ============Blogs============== */
 
 #blogs{
-    /* background: url('../../img/SVG/bg-1.svg'); */
     background-color: #fff;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#blogs .card{
-    background-color: rgba(255, 255, 255, 0.6);
-
-    border: none;
-    min-height: 30vh;
-    width: auto;
-    box-shadow: 0 2px 4px rgba(0,0,0,.5);
-
-    cursor: pointer;
-
-    border-radius: 20px;
-}
-
-#blogs .card .card-body{
-    padding: 2vh 2vw 1vh 2vw;
-}
-
-#blogs .card .card-title{
-    font-weight: 700;
-}
-
-#blogs .card .card-text{
-    height: 20vh;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 0;
-}
-
-#blogs a{
-    color: #000;
-}
-
-#blogs a:hover{
-    color: #00a9c7;
-    text-decoration: none;
 }
 
 /* ============Contact============== */
 #contact{
-    /* background-color: #F5F5F5; */
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -444,11 +378,10 @@ a.non-hover-link:hover{
 #contact a{
     font-weight: 700;
     color: #000;
+    text-decoration: none;
 }
 #contact a:hover{
     color: #212121;
-}
-#contact-links{
-    margin-top: 10vh;
+    text-decoration: underline;
 }
 
