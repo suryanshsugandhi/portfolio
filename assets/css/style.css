@@ -133,74 +133,87 @@
 
 /* ================================================================= */
 /* Global styles*/
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    /* font */
-    font-family: 'Manrope', sans-serif;
-    color: #000;
+body {
+  /* font */
+  font-family: "Manrope", sans-serif;
+  color: #000;
 
-    /* sizing */
-    overflow-x: hidden;
+  /* sizing */
+  overflow-x: hidden;
 }
 
-section{
-    /* text */
-    text-align: center;
+section {
+  /* text */
+  text-align: center;
 
-    /* box sizing */
-    padding-bottom: 2vh;
-    padding-top: 2vh;
+  /* box sizing */
+  padding-bottom: 2vh;
+  padding-top: 2vh;
 }
 
 /* links and buttons */
-a{
-    color: #000;
-    text-decoration: underline;
+a {
+  color: #000;
+  text-decoration: underline;
 }
-a:hover{
-    color: #434343;
-    text-decoration: none;
-}
-
-h4 a{
-    color: #000;
-    text-decoration: none;
-}
-h4 a:hover{
-    color: #000;
-    text-decoration: underline;
-    text-decoration-style: dashed;
+a:hover {
+  color: #434343;
+  text-decoration: none;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active{
-    background: none;
-    border: 0px;
-    outline: 0 none;
+h4 a {
+  color: #000;
+  text-decoration: none;
+}
+h4 a:hover {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-style: dashed;
 }
 
-a.btn{
-    background-color: #000;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    border-color: #000;
-    color: #fff;
-    text-decoration: none;
+.btn-primary:not(:disabled):not(.disabled):active {
+  background: none;
+  border: 0px;
+  outline: 0 none;
 }
-a.btn:hover{
-    color: #fff;
-    background-color: #000;
-    text-decoration: underline;
-    text-decoration-style: dotted;
+p {
+  padding: 5px 10px;
+}
+h4{
+  padding: 5px 10px;
+
 }
 
-a.non-hover-link{
-    color: gray;
+a.btn {
+  background-color: #000;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border-color: #000;
+  color: #fff;
+  text-decoration: none;
 }
-a.non-hover-link:hover{
-    text-decoration: dotted;
-    color: gray;
+a.btn:hover {
+  color: #fff;
+  background-color: #000;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+a.btn * {
+  padding: 2px;
+}
+a.btn i {
+  padding: none;
+}
+
+a.non-hover-link {
+  color: gray;
+}
+a.non-hover-link:hover {
+  text-decoration: dotted;
+  color: gray;
 }
 
 /* ================================================================= */
@@ -208,180 +221,174 @@ a.non-hover-link:hover{
 
 /* ============Landing============== */
 
-#landing{
-    /* sizing */
-    height: 100vh;
-    padding: 5vh 5vw;
-    margin-top: 0;
-    padding-top: 0;
+#landing {
+  /* sizing */
+  height: 100vh;
+  padding: 5vh 5vw;
+  margin-top: 0;
+  padding-top: 0;
 
-    /* background */
-    background: url('../../img/SVG/green-bg-light.svg');
-    background-color: #fff;
-    background-color: #350880;
-    color: #fff;
-    background-size: cover;
-    background-repeat: no-repeat;
+  /* background */
+  background: url("../../img/SVG/green-bg-light.svg");
+  background-color: #fff;
+  background-color: #350880;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    /* text position */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* text position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    /* font */
-    font-family: 'Roboto Condensed', sans-serif;
+  /* font */
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-@media only screen and (max-width: 768px){
-    #landing h1{
-        font-size: 1.5rem;
-    }
+@media only screen and (max-width: 768px) {
+  #landing h1 {
+    font-size: 1.5rem;
+  }
 }
 
-.name-title{
-    color: #edc71c;
+.name-title {
+  color: #edc71c;
 }
 
-#landing a.btn-primary{
-    background: none;
-    border: none;
-    border-radius: 20px;
+#landing a.btn-primary {
+  background: none;
+  border: none;
+  border-radius: 20px;
 
-    justify-content: center;
+  justify-content: center;
 }
-#landing a.btn-primary:hover{
-    text-decoration: none;
-    background: none;
-    border: none;
+#landing a.btn-primary:hover {
+  text-decoration: none;
+  background: none;
+  border: none;
 }
 
 /* ============About============== */
-#about{
-    background-color: #fff;
-    background-size: cover;
-    background-repeat:repeat-y;
+#about {
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: repeat-y;
 
-    /* text position */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  /* text position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.profile-picture{
-    padding: 2px;
-    border-radius: 50%;
-}
-
-#suryansh-name a{
-    color: #000;
-    text-decoration: none;
+.profile-picture {
+  padding: 2px;
+  border-radius: 50%;
 }
 
-#suryansh-name a:hover{
-    text-decoration: underline;
-    text-decoration-style: dashed;
+#suryansh-name a {
+  color: #000;
+  text-decoration: none;
 }
 
-.carousel{
-    /* box sizing */
-    justify-content: space-around;
-    align-items: flex-start;
-    min-height: 55vh;
-
-    /* font */
-    font-size: 0.8rem;
-}
-.custom-carousel{
-    /* box sizing */
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#suryansh-name a:hover {
+  text-decoration: underline;
+  text-decoration-style: dashed;
 }
 
-@media only screen and (max-width: 768px){
-    .carousel{
-        min-height: 50vh;
-    }
+.carousel {
+  top: 10vh;
 
-    .custom-carousel{
-        display: block;
-    }
+  /* flex */
+  justify-content: center;
+  align-items: flex-start;
+
+  /* box sizing */
+  min-height: 70vh;
+
+  /* font */
+  font-size: 0.8rem;
+}
+.carousel-container {
+  /* box sizing */
+  width: 100%;
 }
 
-.carousel-item{
-    padding: 5vh 5vw;
+@media only screen and (max-width: 768px) {
+  .carousel {
+    min-height: 60vh;
+    top: 0vh;
+  }
+
+  .carousel-container {
+    display: block;
+  }
 }
 
-.carousel img{
-    margin-top: 2vh;
-    height: 10vh;
-    padding: 1vh 1vw;
+.carousel-item {
+  padding: 5vh 5vw;
 }
 
-@media only screen and (max-width:768px){
-    .carousel img{
-        height: 6vh;
-    }
+.carousel img {
+  margin-top: 2vh;
+  height: 10vh;
+  padding: 1vh 1vw;
 }
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 /* ============Projects============== */
 
-#projects{
-    background-color: #fff;
-    background-size: cover;
-    background-repeat: no-repeat;
+#projects {
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    /* text position */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* text position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    color: #000;
+  color: #000;
 }
 
-#projects img{
-    width: 100%;
-    /* box-shadow: 2px 5px 24px 0px rgba(0,0,0,0.59); */
-
-}
-#projects .row{
-    animation-name: slideUp;
-    animation-duration: 2s;
+#projects img {
+  width: 100%;
 }
 
 /* ============Blogs============== */
 
-#blogs{
-    background-color: #fff;
+#blogs {
+  background-color: #fff;
+}
+#blogs img {
+  margin: 16px 0px;
 }
 
 /* ============Contact============== */
-#contact{
-    background-size: cover;
-    background-repeat: no-repeat;
+#contact {
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    color: #000;
-    margin-bottom: 0px;
+  color: #000;
+  margin-bottom: 0px;
 }
-#contact .text-secondary{
-    font-size: 0.9rem;
+.text-secondary {
+  font-size: 0.9rem;
 }
-#contact a{
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
+#contact a {
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
 }
-#contact a:hover{
-    color: #212121;
-    text-decoration: underline;
+#contact a:hover {
+  color: #212121;
+  text-decoration: underline;
 }
-
+#contact h4{
+  padding: 0px;
+}
