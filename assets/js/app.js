@@ -2,4 +2,4 @@
 ScrollReveal({ reset: false });    
 
 // elements to use scroll reveal
-ScrollReveal().reveal('.reveal-row', {delay : 300});
+ScrollReveal().reveal('.reveal-row', {delay : 500});
